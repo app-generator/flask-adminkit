@@ -15,8 +15,8 @@ Open-Source **Flask Dashboard** coded with basic modules, database, ORM and depl
 
 > Links
 
-- [Flask Dashboard AdminKit](https://appseed.us/admin-dashboards/flask-adminkit) - product page
-- [Flask Dashboard AdminKit - Demo](flask-adminkit.appseed-srv1.com/) - LIVE deployment
+- [Flask Dashboard AdminKit](https://appseed.us/admin-dashboards/flask) - WIP
+- [Flask Dashboard AdminKit - Demo](https://flask-adminkit.appseed-srv1.com/) - LIVE deployment
 
 <br />
 
