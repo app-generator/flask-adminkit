@@ -13,10 +13,27 @@ Open-Source **Flask Dashboard** coded with basic modules, database, ORM and depl
 - Deployment scripts: Docker, Gunicorn / Nginx, Heroku
 - Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
+<br />
+
 > Links
 
 - [Flask Dashboard AdminKit](https://appseed.us/admin-dashboards/flask) - WIP
 - [Flask Dashboard AdminKit - Demo](https://flask-adminkit.appseed-srv1.com/) - LIVE deployment
+
+<br />
+
+## [AdminKit](https://adminkit.io/?ref=appseed) by AdminKit.io
+
+A professional package that comes with hundreds of UI components, forms, tables, charts, pages and icons. Built on top of Bootstrap 5.
+
+**Built with Bootstrap 5**
+Built on top of the latest version of Bootstrap 5 and HTML5, which means - robust, responsive and easy to customize.
+
+**Dev-to-dev support**
+Our themes are supported by specialists who provide quick and effective support. Usually an email reply takes <24h.
+
+**AdminKit PRO** available
+AdminKit PRO contains over 500+ UI Components ranging from forms and inputs to advanced table and calendar components.
 
 <br />
 
