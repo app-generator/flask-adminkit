@@ -37,6 +37,11 @@ AdminKit PRO contains over 500+ UI Components ranging from forms and inputs to a
 
 <br />
 
+- [AdminKit](https://adminkit.io/?ref=appseed) - product page
+- [AdminKit PRO](https://adminkit.io/pricing/) - the premium version (more components, pages and PREMIUM support)
+
+<br />
+
 ## Want more? Go PRO!
 
 PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Support** (via [Discord](https://discord.gg/fZC6hup))
