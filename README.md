@@ -1,8 +1,11 @@
-# [Flask Dashboard Boilerplate](https://appseed.us/boilerplate-code/flask-dashboard)
+# [Flask Dashboard](http://appseed.us/admin-dashboards/flask) - AdminKit
 
-> Template [boilerplate code](https://appseed.us/boilerplate-code) used by [AppSeed](https://appseed.us) to generate simple admin dashboards coded in [Flask](https://palletsprojects.com/p/flask/) - Features:
+Open-Source **Flask Dashboard** coded with basic modules, database, ORM and deployment scripts on top of **AdminKit** (free version), a modern Bootstrap 5 dashboard template.
 
-- UI Kit: **Datta Able Dashboard** (Lite Version) provided by **CodedThemes**
+<br />
+
+> Flask Dashboard Features
+
 - DBMS: SQLite, PostgreSQL (production) 
 - DB Tools: SQLAlchemy ORM, Alembic (schema migrations)
 - Modular design with **Blueprints**
@@ -12,17 +15,8 @@
 
 > Links
 
-- [Boierplate Code Flask Dashboard](https://boilerplate-code-flask-dashboard.appseed.us/) - LIVE Demo
-- [Boierplate Code Flask Dashboard](https://docs.appseed.us/boilerplate-code/flask-dashboard/) - Documentation
-- [Boierplate Code Flask Dashboard](https://appseed.us/boilerplate-code/flask-dashboard) - Official product page
-- More [Flask Admin Dashboards](https://appseed.us/admin-dashboards/flask) - index hosted by **[AppSeed](https://appseed.us)**
-- [Open-Source Admin Dashboards](https://appseed.us/admin-dashboards/open-source) - index hosted by **[AppSeed](https://appseed.us)**
-
-> Projects that use this starter
-
-- [Flask Corona Dark](https://appseed.us/admin-dashboards/flask-dashboard-corona-dark) - [demo](https://flask-dashboard-corona-dark.appseed.us/), [sources](https://github.com/app-generator/flask-dashboard-corona-dark)
-- [Flask DattaAble PRO](https://appseed.us/admin-dashboards/flask-dashboard-dattaable-pro) - [demo](https://flask-dashboard-dattaable-pro.appseed.us/)
-- [Flask Atlantis Dark](https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark) - [demo](https://flask-dashboard-atlantis-dark.appseed.us/login.html), [sources](https://github.com/app-generator/flask-dashboard-atlantis-dark)
+- [Flask Dashboard AdminKit](https://appseed.us/admin-dashboards/flask-adminkit) - product page
+- [Flask Dashboard AdminKit - Demo](flask-adminkit.appseed-srv1.com/) - LIVE deployment
 
 <br />
 
@@ -37,7 +31,7 @@ PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Suppo
 <br />
 <br />
 
-![Boierplate Code Flask Dashboard - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/boilerplate-code-flask-dashboard/master/media/boilerplate-code-flask-dashboard-screen.png)
+![Boierplate Code Flask Dashboard - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/flask-adminkit/master/media/flask-adminkit-screen.png)
 
 <br />
 
@@ -45,8 +39,8 @@ PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Suppo
 
 ```bash
 $ # Get the code
-$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
-$ cd boilerplate-code-flask-dashboard
+$ git clone https://github.com/app-generator/flask-adminkit.git
+$ cd flask-adminkit
 $
 $ # Virtualenv modules installation (Unix based systems)
 $ virtualenv env
@@ -212,8 +206,8 @@ The application can be easily executed in a docker container. The steps:
 > Get the code
 
 ```bash
-$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
-$ cd boilerplate-code-flask-dashboard
+$ git clone https://github.com/app-generator/flask-adminkit.git
+$ cd flask-adminkit
 ```
 
 > Start the app in Docker
@@ -238,8 +232,8 @@ Steps to deploy on **Heroku**
 
 ```bash
 $ # Clone the source code:
-$ git clone https://github.com/app-generator/boilerplate-code-flask-dashboard.git
-$ cd boilerplate-code-flask-dashboard
+$ git clone https://github.com/app-generator/flask-adminkit.git
+$ cd flask-adminkit
 $
 $ # Check Heroku CLI is installed
 $ heroku -v
@@ -312,4 +306,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Flask Dashboard Boilerplate](https://appseed.us/boilerplate-code/flask-dashboard) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Flask Dashboard](http://appseed.us/admin-dashboards/flask) AdminKit - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).

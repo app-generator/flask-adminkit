@@ -1,92 +1,133 @@
 
-    <nav class="pcoded-navbar">
-        <div class="navbar-wrapper">
-            <div class="navbar-brand header-logo">
-                <a target="_blank" rel="noopener noreferrer" 
-                   href="https://appseed.us/boilerplate-code/flask-dashboard" class="b-brand">
-                    <div class="b-bg">
-                        <i class="feather icon-trending-up"></i>
-                    </div>
-                    <span class="b-title">Flask Dashboard</span>
-                </a>
-                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
-            </div>
-            <div class="navbar-content scroll-div">
-                <ul class="nav pcoded-inner-navbar">
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Navigation</label>
-                    </li>
-                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" 
-                        class="nav-item {% if 'index' in segment %} active {% endif %}">
-                        <a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span>
-                            <span class="pcoded-mtext">Dashboard</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>UI Element</label>
-                    </li>
-                    <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Components</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="/ui-button.html" class="">Button</a></li>
-                            <li class=""><a href="/ui-badges.html" class="">Badges</a></li>
-                            <li class=""><a href="/ui-breadcrumb-pagination.html" class="">Breadcrumb & paggination</a></li>
-                            <li class=""><a href="/ui-collapse.html" class="">Collapse</a></li>
-                            <li class=""><a href="/ui-tabs.html" class="">Tabs & pills</a></li>
-                            <li class=""><a href="/ui-typography.html" class="">Typography</a></li>
-                            <li class=""><a href="/ui-icons.html" class="">Feather<span class="pcoded-badge label label-danger">NEW</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Forms & table</label>
-                    </li>
-                    <li data-username="form elements advance componant validation masking wizard picker select" 
-                        class="nav-item {% if 'ui-forms' in segment %} active {% endif %}">
-                        <a href="/ui-forms.html" class="nav-link ">
-                            <span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Form elements</span></a>
-                    </li>
-                    <li data-username="Table bootstrap datatable footable" 
-                        class="nav-item {% if 'ui-tables' in segment %} active {% endif %}">
-                        <a href="/ui-tables.html" class="nav-link ">
-                            <span class="pcoded-micon"><i class="feather icon-server"></i></span><span class="pcoded-mtext">Table</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Chart & Maps</label>
-                    </li>
-                    <li data-username="Charts Morris" class="nav-item {% if 'charts-morris' in segment %} active {% endif %}">
-                        <a href="/charts-morris.html" class="nav-link">
-                            <span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Chart</span></a></li>
-                    <li data-username="Maps Google" class="nav-item {% if 'maps-google' in segment %} active {% endif %}">
-                        <a href="/maps-google.html" class="nav-link ">
-                            <span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span></a></li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Pages</label>
-                    </li>
-                    <li data-username="Authentication Sign up Sign in reset password Change password Personal information profile settings map form subscribe" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span class="pcoded-mtext">Authentication</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="/auth-reset-pass.html" class="">Reset Pass</a></li>
-                            <li class=""><a href="{{ url_for('base_blueprint.register') }}" class="">Register</a></li>
-                        </ul>
-                    </li>
-                    <li data-username="Sample Page" class="nav-item {% if 'page-blank' in segment %} active {% endif %}">
-                        <a href="/page-blank.html" class="nav-link"><span class="pcoded-micon">
-                            <i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
-                    <li data-username="Sample Page" class="nav-item {% if 'page-403' in segment %} active {% endif %}">
-                        <a href="/page-403.html" class="nav-link">
-                            <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Error 403</span></a></li>
-                    <li data-username="Sample Page" class="nav-item {% if 'page-404' in segment %} active {% endif %}">
-                        <a href="/page-404.html" class="nav-link">
-                            <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Error 404</span></a></li>
-                    <li data-username="Sample Page" class="nav-item {% if 'page-500' in segment %} active {% endif %}">
-                        <a href="/page-500.html" class="nav-link">
-                            <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Error 500</span></a></li>
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+					<span class="align-middle">AdminKit</span>
+				</a>
 
-                    <li data-username="Disabled Menu" class="nav-item">
-                        <a href="{{ url_for('base_blueprint.logout') }}" class="nav-link">
-                            <span class="pcoded-micon"><i class="feather icon-power"></i></span><span class="pcoded-mtext">Logout [{{ current_user.username }}]</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item {% if 'index' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="/">
+							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item {% if 'profile' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="pages-profile.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item {% if 'settings' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="pages-settings.html">
+							<i class="align-middle" data-feather="settings"></i> <span class="align-middle">Settings</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item {% if 'invoice' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="pages-invoice.html">
+							<i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Invoice</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item {% if 'blank' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="pages-blank.html">
+							<i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a href="#auth" data-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Auth</span>
+						</a>
+						<ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-sign-in.html">Sign In</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-sign-up.html">Sign Up</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-header">
+						Tools & Components
+					</li>
+					<li class="sidebar-item">
+						<a data-target="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+              				<i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">UI Elements</span>
+            			</a>
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-alerts.html">Alerts</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-buttons.html">Buttons</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-general.html">General</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item {% if 'icons' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="icons-feather.html">
+              				<i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a data-target="#forms" data-toggle="collapse" class="sidebar-link collapsed">
+              				<i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>
+            			</a>
+						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item {% if 'tables' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="tables-bootstrap.html">
+              				<i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-header">
+						Plugins & Addons
+					</li>
+
+					<li class="sidebar-item {% if 'charts' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="charts-chartjs.html">
+              				<i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Charts</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item {% if 'maps-google' in segment %} active {% endif %}">
+						<a class="sidebar-link" href="maps-google.html">
+              				<i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-header">
+						Auth
+					</li>                    
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="{{ url_for('base_blueprint.logout') }}">
+              				<i class="align-middle" data-feather="log-out"></i> 
+                                <span class="align-middle">Logout</span>
+            			</a>
+					</li>
+
+				</ul>
+
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">Want More?</strong>
+						<div class="mb-3 text-sm">
+							For LIVE support and more starters access AppSeed.
+						</div>
+						<a href="https://appseed.us?ref=demo" 
+                           target="_blank" class="btn btn-primary btn-block">AppSeed</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+

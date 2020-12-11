@@ -1,33 +1,45 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} 403 Page {% endblock %}
+{% block title %} Error 500 {% endblock %} 
 
-{% block content %}   
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather x-circle"></i>
-                    </div>
-                    <h3 class="mb-4">Error 500</h3>
+{% block content %}
 
-                    <br />
+    <!-- Section -->
+	<main class="d-flex w-100">
+		<div class="container d-flex flex-column">
+			<div class="row vh-100">
+				<div class="col-sm-10 col-md-8 col-lg-6 mx-auto d-table h-100">
+					<div class="d-table-cell align-middle">
 
-                    <span class="mb-0 text-muted">
-                        Server Error - <a href="/">Home</a> 
-                    </span>
+						<div class="text-center mt-4">
+							<h1 class="h2">
+                                Error 500
+                            </h1>
+							<p class="lead">
+								Server error - please contact support.
+							</p>
+						</div>
 
-                </div>
-            </div>
-        </div>
-    </div>
+						<div class="card">
+							<div class="card-body">
+                                    <div class="text-center mt-3">
+                                        <a href="/" class="btn btn-lg btn-primary">HOME</a>
+                                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
+                                    </div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 
 {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

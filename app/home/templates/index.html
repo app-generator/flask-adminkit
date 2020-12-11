@@ -2,601 +2,477 @@
 
 {% block title %} Dashboard {% endblock %} 
 
-<!-- Specific CSS goes HERE -->
+<!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
 
-    <div class="pcoded-content">
-        <div class="pcoded-inner-content">
-            <!-- [ breadcrumb ] start -->
+	<main class="content">
 
-            <!-- [ breadcrumb ] end -->
-            <div class="main-body">
-                <div class="page-wrapper">
-                    <!-- [ Main Content ] start -->
-                    <div class="row">
-                        <!--[ daily sales section ] start-->
-                        <div class="col-md-6 col-xl-4">
-                            <div class="card daily-sales">
-                                <div class="card-block">
-                                    <h6 class="mb-4">Daily Sales</h6>
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-9">
-                                            <h3 class="f-w-300 d-flex align-items-center m-b-0"><i class="feather icon-arrow-up text-c-green f-30 m-r-10"></i>$ 249.95</h3>
-                                        </div>
+		<div class="container-fluid p-0">
 
-                                        <div class="col-3 text-right">
-                                            <p class="m-b-0">67%</p>
-                                        </div>
-                                    </div>
-                                    <div class="progress m-t-30" style="height: 7px;">
-                                        <div class="progress-bar progress-c-theme" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--[ daily sales section ] end-->
-                        <!--[ Monthly  sales section ] starts-->
-                        <div class="col-md-6 col-xl-4">
-                            <div class="card Monthly-sales">
-                                <div class="card-block">
-                                    <h6 class="mb-4">Monthly Sales</h6>
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-9">
-                                            <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-arrow-down text-c-red f-30 m-r-10"></i>$ 2.942.32</h3>
-                                        </div>
-                                        <div class="col-3 text-right">
-                                            <p class="m-b-0">36%</p>
-                                        </div>
-                                    </div>
-                                    <div class="progress m-t-30" style="height: 7px;">
-                                        <div class="progress-bar progress-c-theme2" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--[ Monthly  sales section ] end-->
-                        <!--[ year  sales section ] starts-->
-                        <div class="col-md-12 col-xl-4">
-                            <div class="card yearly-sales">
-                                <div class="card-block">
-                                    <h6 class="mb-4">Yearly Sales</h6>
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-9">
-                                            <h3 class="f-w-300 d-flex align-items-center  m-b-0"><i class="feather icon-arrow-up text-c-green f-30 m-r-10"></i>$ 8.638.32</h3>
-                                        </div>
-                                        <div class="col-3 text-right">
-                                            <p class="m-b-0">80%</p>
-                                        </div>
-                                    </div>
-                                    <div class="progress m-t-30" style="height: 7px;">
-                                        <div class="progress-bar progress-c-theme" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--[ year  sales section ] end-->
-                        <!--[ Recent Users ] start-->
-                        <div class="col-xl-8 col-md-6">
-                            <div class="card Recent-Users">
-                                <div class="card-header">
-                                    <h5>Recent Users</h5>
-                                </div>
-                                <div class="card-block px-0 py-3">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover">
-                                            <tbody>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user"></td>
-                                                    <td>
-                                                        <h6 class="mb-1">Isabella Christensen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply…</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>11 MAY 12:56</h6>
-                                                    </td>
-                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-2.jpg" alt="activity-user"></td>
-                                                    <td>
-                                                        <h6 class="mb-1">Mathilde Andersen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply text of…</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i class="fas fa-circle text-c-red f-10 m-r-15"></i>11 MAY 10:35</h6>
-                                                    </td>
-                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-3.jpg" alt="activity-user"></td>
-                                                    <td>
-                                                        <h6 class="mb-1">Karla Sorensen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply…</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>9 MAY 17:38</h6>
-                                                    </td>
-                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user"></td>
-                                                    <td>
-                                                        <h6 class="mb-1">Ida Jorgensen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply text of…</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted f-w-300"><i class="fas fa-circle text-c-red f-10 m-r-15"></i>19 MAY 12:56</h6>
-                                                    </td>
-                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td>
-                                                </tr>
-                                                <tr class="unread">
-                                                    <td><img class="rounded-circle" style="width:40px;" src="/static/assets/images/user/avatar-2.jpg" alt="activity-user"></td>
-                                                    <td>
-                                                        <h6 class="mb-1">Albert Andersen</h6>
-                                                        <p class="m-0">Lorem Ipsum is simply dummy…</p>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>21 July 12:56</h6>
-                                                    </td>
-                                                    <td><a href="#!" class="label theme-bg2 text-white f-12">Reject</a><a href="#!" class="label theme-bg text-white f-12">Approve</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--[ Recent Users ] end-->
+			<div class="row mb-2 mb-xl-3">
+				<div class="col-auto d-none d-sm-block">
+					<h3><strong>Analytics</strong> Dashboard</h3>
+				</div>
 
-                        <!-- [ statistics year chart ] start -->
-                        <div class="col-xl-4 col-md-6">
-                            <div class="card card-event">
-                                <div class="card-block">
-                                    <div class="row align-items-center justify-content-center">
-                                        <div class="col">
-                                            <h5 class="m-0">Upcoming Event</h5>
-                                        </div>
-                                        <div class="col-auto">
-                                            <label class="label theme-bg2 text-white f-14 f-w-400 float-right">34%</label>
-                                        </div>
-                                    </div>
-                                    <h2 class="mt-3 f-w-300">45<sub class="text-muted f-14">Competitors</sub></h2>
-                                    <h6 class="text-muted mt-4 mb-0">You can participate in event </h6>
-                                    <i class="fab fa-angellist text-c-purple f-50"></i>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-block border-bottom">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-auto">
-                                            <i class="feather icon-zap f-30 text-c-green"></i>
-                                        </div>
-                                        <div class="col">
-                                            <h3 class="f-w-300">235</h3>
-                                            <span class="d-block text-uppercase">TOTAL IDEAS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-block">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-auto">
-                                            <i class="feather icon-map-pin f-30 text-c-blue"></i>
-                                        </div>
-                                        <div class="col">
-                                            <h3 class="f-w-300">26</h3>
-                                            <span class="d-block text-uppercase">TOTAL LOCATIONS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- [ statistics year chart ] end -->
-                        <!--[social-media section] start-->
-                        <div class="col-md-12 col-xl-4">
-                            <div class="card card-social">
-                                <div class="card-block border-bottom">
-                                    <div class="row align-items-center justify-content-center">
-                                        <div class="col-auto">
-                                            <i class="fab fa-facebook-f text-primary f-36"></i>
-                                        </div>
-                                        <div class="col text-right">
-                                            <h3>12,281</h3>
-                                            <h5 class="text-c-green mb-0">+7.2% <span class="text-muted">Total Likes</span></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-block">
-                                    <div class="row align-items-center justify-content-center card-active">
-                                        <div class="col-6">
-                                            <h6 class="text-center m-b-10"><span class="text-muted m-r-5">Target:</span>35,098</h6>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-c-theme" role="progressbar" style="width:60%;height:6px;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <h6 class="text-center  m-b-10"><span class="text-muted m-r-5">Duration:</span>3,539</h6>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-c-theme2" role="progressbar" style="width:45%;height:6px;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-4">
-                            <div class="card card-social">
-                                <div class="card-block border-bottom">
-                                    <div class="row align-items-center justify-content-center">
-                                        <div class="col-auto">
-                                            <i class="fab fa-twitter text-c-blue f-36"></i>
-                                        </div>
-                                        <div class="col text-right">
-                                            <h3>11,200</h3>
-                                            <h5 class="text-c-purple mb-0">+6.2% <span class="text-muted">Total Likes</span></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-block">
-                                    <div class="row align-items-center justify-content-center card-active">
-                                        <div class="col-6">
-                                            <h6 class="text-center m-b-10"><span class="text-muted m-r-5">Target:</span>34,185</h6>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-c-green" role="progressbar" style="width:40%;height:6px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <h6 class="text-center  m-b-10"><span class="text-muted m-r-5">Duration:</span>4,567</h6>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-c-blue" role="progressbar" style="width:70%;height:6px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-4">
-                            <div class="card card-social">
-                                <div class="card-block border-bottom">
-                                    <div class="row align-items-center justify-content-center">
-                                        <div class="col-auto">
-                                            <i class="fab fa-google-plus-g text-c-red f-36"></i>
-                                        </div>
-                                        <div class="col text-right">
-                                            <h3>10,500</h3>
-                                            <h5 class="text-c-blue mb-0">+5.9% <span class="text-muted">Total Likes</span></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-block">
-                                    <div class="row align-items-center justify-content-center card-active">
-                                        <div class="col-6">
-                                            <h6 class="text-center m-b-10"><span class="text-muted m-r-5">Target:</span>25,998</h6>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-c-theme" role="progressbar" style="width:80%;height:6px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <h6 class="text-center  m-b-10"><span class="text-muted m-r-5">Duration:</span>7,753</h6>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-c-theme2" role="progressbar" style="width:50%;height:6px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--[social-media section] end-->
-                        <!-- [ rating list ] starts-->
-                        <div class="col-xl-4 col-md-6">
-                            <div class="card user-list">
-                                <div class="card-header">
-                                    <h5>Rating</h5>
-                                </div>
-                                <div class="card-block">
-                                    <div class="row align-items-center justify-content-center m-b-20">
-                                        <div class="col-6">
-                                            <h2 class="f-w-300 d-flex align-items-center float-left m-0">4.7 <i class="fas fa-star f-10 m-l-10 text-c-yellow"></i></h2>
-                                        </div>
-                                        <div class="col-6">
-                                            <h6 class="d-flex  align-items-center float-right m-0">0.4 <i class="fas fa-caret-up text-c-green f-22 m-l-10"></i></h6>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <h6 class="align-items-center float-left"><i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>5</h6>
-                                            <h6 class="align-items-center float-right">384</h6>
-                                            <div class="progress m-t-30 m-b-20" style="height: 6px;">
-                                                <div class="progress-bar progress-c-theme" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <h6 class="align-items-center float-left"><i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>4</h6>
-                                            <h6 class="align-items-center float-right">145</h6>
-                                            <div class="progress m-t-30  m-b-20" style="height: 6px;">
-                                                <div class="progress-bar progress-c-theme" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <h6 class="align-items-center float-left"><i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>3</h6>
-                                            <h6 class="align-items-center float-right">24</h6>
-                                            <div class="progress m-t-30  m-b-20" style="height: 6px;">
-                                                <div class="progress-bar progress-c-theme" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <h6 class="align-items-center float-left"><i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>2</h6>
-                                            <h6 class="align-items-center float-right">1</h6>
-                                            <div class="progress m-t-30  m-b-20" style="height: 6px;">
-                                                <div class="progress-bar progress-c-theme" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <h6 class="align-items-center float-left"><i class="fas fa-star f-10 m-r-10 text-c-yellow"></i>1</h6>
-                                            <h6 class="align-items-center float-right">0</h6>
-                                            <div class="progress m-t-30  m-b-20" style="height: 6px;">
-                                                <div class="progress-bar" role="progressbar" style="width:0;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- [ rating list ] end-->
-                        <div class="col-xl-8 col-md-12 m-b-30">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Today</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active show" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">This Week</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">All</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>User</th>
-                                                <th>Activity</th>
-                                                <th>Time</th>
-                                                <th>Status</th>
-                                                <th class="text-right"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user">Ida Jorgensen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">The quick brown fox</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">3:28 PM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-green">Done</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-green f-10"></i></td>
-                                            </tr>
+				<div class="col-auto ml-auto text-right mt-n1">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb bg-transparent p-0 mt-1 mb-0">
+							<li class="breadcrumb-item"><a href="#">AdminKit</a></li>
+							<li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Analytics</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 col-xxl-5 d-flex">
+					<div class="w-100">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title mb-4">Sales</h5>
+										<h1 class="mt-1 mb-3">2.382</h1>
+										<div class="mb-1">
+											<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+											<span class="text-muted">Since last week</span>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title mb-4">Visitors</h5>
+										<h1 class="mt-1 mb-3">14.212</h1>
+										<div class="mb-1">
+											<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
+											<span class="text-muted">Since last week</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title mb-4">Earnings</h5>
+										<h1 class="mt-1 mb-3">$21.300</h1>
+										<div class="mb-1">
+											<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
+											<span class="text-muted">Since last week</span>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title mb-4">Orders</h5>
+										<h1 class="mt-1 mb-3">64</h1>
+										<div class="mb-1">
+											<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -2.25% </span>
+											<span class="text-muted">Since last week</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle  m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-2.jpg" alt="activity-user">Albert Andersen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">Jumps over the lazy</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">2:37 PM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-red">Missed</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-red f-10"></i></td>
-                                            </tr>
+				<div class="col-xl-6 col-xxl-7">
+					<div class="card flex-fill w-100">
+						<div class="card-header">
 
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle  m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-3.jpg" alt="activity-user">Silje Larsen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">Dog the quick brown</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">10:23 AM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-purple">Delayed</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-purple f-10"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle  m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user">Ida Jorgensen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">The quick brown fox</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">4:28 PM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-green">Done</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-green f-10"></i></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+							<h5 class="card-title mb-0">Recent Movement</h5>
+						</div>
+						<div class="card-body py-3">
+							<div class="chart chart-sm">
+								<canvas id="chartjs-dashboard-line"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                                </div>
-                                <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>User</th>
-                                                <th>Activity</th>
-                                                <th>Time</th>
-                                                <th>Status</th>
-                                                <th class="text-right"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle  m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-2.jpg" alt="activity-user">Albert Andersen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">Jumps over the lazy</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">2:37 PM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-red">Missed</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-red f-10"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user">Ida Jorgensen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">The quick brown fox</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">3:28 PM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-green">Done</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-green f-10"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle  m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user">Ida Jorgensen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">The quick brown fox</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">4:28 PM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-green">Done</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-green f-10"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle  m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-3.jpg" alt="activity-user">Silje Larsen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">Dog the quick brown</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">10:23 AM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-purple">Delayed</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-purple f-10"></i></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+			<div class="row">
+				<div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
+					<div class="card flex-fill w-100">
+						<div class="card-header">
 
-                                </div>
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>User</th>
-                                                <th>Activity</th>
-                                                <th>Time</th>
-                                                <th>Status</th>
-                                                <th class="text-right"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle  m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-3.jpg" alt="activity-user">Silje Larsen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">Dog the quick brown</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">10:23 AM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-purple">Delayed</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-purple f-10"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user">Ida Jorgensen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">The quick brown fox</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">3:28 PM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-green">Done</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-green f-10"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle  m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-2.jpg" alt="activity-user">Albert Andersen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">Jumps over the lazy</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">2:37 PM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-red">Missed</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-red f-10"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h6 class="m-0"><img class="rounded-circle  m-r-10" style="width:40px;" src="/static/assets/images/user/avatar-1.jpg" alt="activity-user">Ida Jorgensen</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">The quick brown fox</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0">4:28 PM</h6>
-                                                </td>
-                                                <td>
-                                                    <h6 class="m-0 text-c-green">Done</h6>
-                                                </td>
-                                                <td class="text-right"><i class="fas fa-circle text-c-green f-10"></i></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+							<h5 class="card-title mb-0">Browser Usage</h5>
+						</div>
+						<div class="card-body d-flex">
+							<div class="align-self-center w-100">
+								<div class="py-3">
+									<div class="chart chart-xs">
+										<canvas id="chartjs-dashboard-pie"></canvas>
+									</div>
+								</div>
 
-                    </div>
-                    <!-- [ Main Content ] end -->
-                </div>
-            </div>
-        </div>
-    </div>
+								<table class="table mb-0">
+									<tbody>
+										<tr>
+											<td>Chrome</td>
+											<td class="text-right">4306</td>
+										</tr>
+										<tr>
+											<td>Firefox</td>
+											<td class="text-right">3801</td>
+										</tr>
+										<tr>
+											<td>IE</td>
+											<td class="text-right">1689</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
+					<div class="card flex-fill w-100">
+						<div class="card-header">
+
+							<h5 class="card-title mb-0">Real-Time</h5>
+						</div>
+						<div class="card-body px-4">
+							<div id="world_map" style="height:350px;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
+					<div class="card flex-fill">
+						<div class="card-header">
+
+							<h5 class="card-title mb-0">Calendar</h5>
+						</div>
+						<div class="card-body d-flex">
+							<div class="align-self-center w-100">
+								<div class="chart">
+									<div id="datetimepicker-dashboard"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-8 col-xxl-9 d-flex">
+					<div class="card flex-fill">
+						<div class="card-header">
+
+							<h5 class="card-title mb-0">Latest Projects</h5>
+						</div>
+						<table class="table table-hover my-0">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th class="d-none d-xl-table-cell">Start Date</th>
+									<th class="d-none d-xl-table-cell">End Date</th>
+									<th>Status</th>
+									<th class="d-none d-md-table-cell">Assignee</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Project Apollo</td>
+									<td class="d-none d-xl-table-cell">01/01/2020</td>
+									<td class="d-none d-xl-table-cell">31/06/2020</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td class="d-none d-md-table-cell">Vanessa Tucker</td>
+								</tr>
+								<tr>
+									<td>Project Fireball</td>
+									<td class="d-none d-xl-table-cell">01/01/2020</td>
+									<td class="d-none d-xl-table-cell">31/06/2020</td>
+									<td><span class="badge bg-danger">Cancelled</span></td>
+									<td class="d-none d-md-table-cell">William Harris</td>
+								</tr>
+								<tr>
+									<td>Project Hades</td>
+									<td class="d-none d-xl-table-cell">01/01/2020</td>
+									<td class="d-none d-xl-table-cell">31/06/2020</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td class="d-none d-md-table-cell">Sharon Lessman</td>
+								</tr>
+								<tr>
+									<td>Project Nitro</td>
+									<td class="d-none d-xl-table-cell">01/01/2020</td>
+									<td class="d-none d-xl-table-cell">31/06/2020</td>
+									<td><span class="badge bg-warning">In progress</span></td>
+									<td class="d-none d-md-table-cell">Vanessa Tucker</td>
+								</tr>
+								<tr>
+									<td>Project Phoenix</td>
+									<td class="d-none d-xl-table-cell">01/01/2020</td>
+									<td class="d-none d-xl-table-cell">31/06/2020</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td class="d-none d-md-table-cell">William Harris</td>
+								</tr>
+								<tr>
+									<td>Project X</td>
+									<td class="d-none d-xl-table-cell">01/01/2020</td>
+									<td class="d-none d-xl-table-cell">31/06/2020</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td class="d-none d-md-table-cell">Sharon Lessman</td>
+								</tr>
+								<tr>
+									<td>Project Romeo</td>
+									<td class="d-none d-xl-table-cell">01/01/2020</td>
+									<td class="d-none d-xl-table-cell">31/06/2020</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td class="d-none d-md-table-cell">Christina Mason</td>
+								</tr>
+								<tr>
+									<td>Project Wombat</td>
+									<td class="d-none d-xl-table-cell">01/01/2020</td>
+									<td class="d-none d-xl-table-cell">31/06/2020</td>
+									<td><span class="badge bg-warning">In progress</span></td>
+									<td class="d-none d-md-table-cell">William Harris</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 col-xxl-3 d-flex">
+					<div class="card flex-fill w-100">
+						<div class="card-header">
+
+							<h5 class="card-title mb-0">Monthly Sales</h5>
+						</div>
+						<div class="card-body d-flex w-100">
+							<div class="align-self-center chart chart-lg">
+								<canvas id="chartjs-dashboard-bar"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
 
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
-{% block javascripts %}{% endblock javascripts %}
+{% block javascripts %}
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+			// Line chart
+			new Chart(document.getElementById("chartjs-dashboard-line"), {
+				type: "line",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: [
+							2115,
+							1562,
+							1584,
+							1892,
+							1587,
+							1923,
+							2566,
+							2448,
+							2805,
+							3438,
+							2917,
+							3327
+						]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 1000
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var markers = [{
+					coords: [31.230391, 121.473701],
+					name: "Shanghai"
+				},
+				{
+					coords: [28.704060, 77.102493],
+					name: "Delhi"
+				},
+				{
+					coords: [6.524379, 3.379206],
+					name: "Lagos"
+				},
+				{
+					coords: [35.689487, 139.691711],
+					name: "Tokyo"
+				},
+				{
+					coords: [23.129110, 113.264381],
+					name: "Guangzhou"
+				},
+				{
+					coords: [40.7127837, -74.0059413],
+					name: "New York"
+				},
+				{
+					coords: [34.052235, -118.243683],
+					name: "Los Angeles"
+				},
+				{
+					coords: [41.878113, -87.629799],
+					name: "Chicago"
+				},
+				{
+					coords: [51.507351, -0.127758],
+					name: "London"
+				},
+				{
+					coords: [40.416775, -3.703790],
+					name: "Madrid "
+				}
+			];
+			var map = new JsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				}
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span class=\"fas fa-chevron-left\" title=\"Previous month\"></span>",
+				nextArrow: "<span class=\"fas fa-chevron-right\" title=\"Next month\"></span>",
+			});
+		});
+	</script>
+
+{% endblock javascripts %}
