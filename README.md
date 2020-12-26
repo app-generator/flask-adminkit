@@ -310,4 +310,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Flask Dashboard](http://appseed.us/admin-dashboards/flask) AdminKit - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Flask Dashboard](http://appseed.us/admin-dashboards/flask) AdminKit - Provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
