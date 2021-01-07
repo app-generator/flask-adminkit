@@ -21,6 +21,7 @@ AdminKit A professional package that comes with hundreds of UI components, forms
 
 - [Flask Dashboard AdminKit](https://appseed.us/admin-dashboards/flask) - WIP
 - [Flask Dashboard AdminKit - Demo](https://flask-adminkit.appseed-srv1.com/) - LIVE deployment
+- [Flask Tutorial](https://github.com/app-generator/tutorial-flask) - Getting started with Flask
 
 <br />
 
