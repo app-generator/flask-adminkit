@@ -8,12 +8,17 @@ from flask import render_template, redirect, url_for, request
 from flask_login import login_required, current_user
 from app import login_manager
 from jinja2 import TemplateNotFound
+import requests
+
 
 @blueprint.route('/index')
 @login_required
 def index():
-
-    return render_template('index.html', segment='index')
+    response = requests.get('http://127.0.0.1:8000/api/get_informations')  # Remplacez avec l'URL de votre API
+    bot_info = response.json()  # Supposons que votre API renvoie un JSON
+    bot_username = bot_info[0][1]
+    bot_server = bot_info[0][3]
+    return render_template('index.html', segment='index', bot_username=bot_username, bot_server=bot_server)
 
 @blueprint.route('/<template>')
 @login_required
